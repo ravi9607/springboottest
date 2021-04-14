@@ -25,25 +25,27 @@ public class controller {
     }
 
     @GetMapping("/stu")
-    public ResponseEntity<List<user>> findAll(){
+    public List<user> findAll(){
 
-        List<user> u=serviceimplement.getUsers();
-        if(u.size() <= 0){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-        return ResponseEntity.status(HttpStatus.CREATED).body(u);
+        return this.serviceimplement.getUsers();
+//        List<user> u=serviceimplement.getUsers();
+//        if(u.size() <= 0){
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+//        }
+//        return ResponseEntity.status(HttpStatus.CREATED).body(u);
     }
 
     @PostMapping("/stu")
-    public ResponseEntity<user> post(@RequestBody user User){
-        user u=null;
-        try {
-            u = serviceimplement.addUser(User);
-            return ResponseEntity.of(Optional.of(u));
-        }catch (Exception e){
-            e.printStackTrace();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        }
-
+    public user post(@RequestBody user User){
+//        user u=null;
+//        try {
+//            u = serviceimplement.addUser(User);
+//            return ResponseEntity.of(Optional.of(u));
+//        }catch (Exception e){
+//            e.printStackTrace();
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+//        }
+//
+        return this.serviceimplement.addUser(User);
     }
 }

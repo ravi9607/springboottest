@@ -17,13 +17,13 @@ public class user {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String fName;
 
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String lName;
 
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private long pNumber;
 
     public user(Long id, String fName, String lName, Long pNumber) {
