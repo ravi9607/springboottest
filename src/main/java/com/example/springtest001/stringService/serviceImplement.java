@@ -48,9 +48,9 @@ public class serviceImplement  {
         userRepository.delete(u);
     }
 
-    public user getUserByName(String fName){
-        return  userRepository.findByFName(fName);
-    }
+//    public user getUserByName(String fName){
+//        return  userRepository.findByFName(fName);
+//    }
 
 //    public List<user> findByIdAndFName(Long Id,String FName){
 //        return userRepository.findAllByIdAndFName(Id,FName);
