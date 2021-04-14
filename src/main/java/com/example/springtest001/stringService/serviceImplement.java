@@ -2,6 +2,7 @@ package com.example.springtest001.stringService;
 
 import com.example.springtest001.User.user;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 public class serviceImplement  {
 
     @Autowired
+    private JdbcTemplate jdbcTemplate;
     private UserRepository userRepository;
 
     public List<user> getUsers() {
@@ -24,7 +26,7 @@ public class serviceImplement  {
 //            } catch (Exception e) {
 //                e.printStackTrace();
 //            }
-//        }
+
         userRepository.save(User);
         return User;
     }
