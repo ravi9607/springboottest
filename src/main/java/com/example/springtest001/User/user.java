@@ -13,12 +13,17 @@ import javax.persistence.*;
 //@NoArgsConstructor
 public class user {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
+    @Column(unique = true)
     private String fName;
+
+    @Column(unique = true)
     private String lName;
 
-
+    @Column(unique = true)
     private long pNumber;
 
     public user(Long id, String fName, String lName, Long pNumber) {
