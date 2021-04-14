@@ -1,6 +1,6 @@
-package com.example.springejava.stringService;
+package com.example.springtest001.stringService;
 
-import com.example.springejava.User.user;
+import com.example.springtest001.User.user;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

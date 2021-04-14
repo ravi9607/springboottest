@@ -1,10 +1,9 @@
-package com.example.springejava.stringService;
+package com.example.springtest001.stringService;
 
-import com.example.springejava.User.user;
+import com.example.springtest001.User.user;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
 import java.util.List;
 
 @Service

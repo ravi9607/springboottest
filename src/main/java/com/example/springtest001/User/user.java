@@ -1,11 +1,7 @@
-package com.example.springejava.User;
+package com.example.springtest001.User;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.bytebuddy.implementation.bytecode.constant.DefaultValue;
-import org.hibernate.cfg.annotations.reflection.XMLContext;
 
 import javax.persistence.*;
 
